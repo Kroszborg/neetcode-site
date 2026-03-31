@@ -89,7 +89,7 @@ export default function NaviStory() {
               <div>
                 <p className="font-sans font-semibold text-white text-base">Navi</p>
                 <p className="font-sans text-sm text-zinc-400 mt-0.5">Creator of NeetCode</p>
-                <p className="font-sans text-sm text-zinc-500 dark:text-zinc-500 mt-0.5">
+                <p className="font-sans text-sm text-zinc-500 mt-0.5">
                   Former Software Engineer @ Google
                 </p>
               </div>

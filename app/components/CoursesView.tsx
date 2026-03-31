@@ -1,5 +1,7 @@
 'use client';
 
+import { motion } from 'framer-motion';
+
 const courseCategories = [
   {
     title: 'Data Structures & Algorithms',
@@ -44,8 +46,11 @@ export default function CoursesView() {
     >
       <div className="grid md:grid-cols-2 gap-6">
         {courseCategories.map((category, ci) => (
-          <div
+          <motion.div
             key={category.title}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.35, delay: ci * 0.06 }}
             className="p-6 rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-violet-500/30 transition-colors"
           >
             <h3 className="text-lg font-semibold text-white mb-1">{category.title}</h3>
@@ -53,8 +58,11 @@ export default function CoursesView() {
 
             <div className="space-y-3">
               {category.courses.map((course, i) => (
-                <div
+                <motion.div
                   key={course.name}
+                  initial={{ opacity: 0, x: -8 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.25, delay: ci * 0.06 + i * 0.05 }}
                   className={`group p-4 rounded-xl bg-black/50 border transition-all cursor-pointer hover:scale-[1.02] ${
                     course.featured
                       ? 'border-violet-500/30 bg-violet-900/10'
@@ -78,7 +86,7 @@ export default function CoursesView() {
                       </span>
                     )}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>
@@ -100,7 +108,7 @@ export default function CoursesView() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </a>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

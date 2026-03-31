@@ -346,7 +346,7 @@ export default function PricingClient() {
         >
           <p className="font-sans text-sm text-zinc-500">
             Questions? Email us at{' '}
-            <a href="mailto:support@neetcode.io" className="text-zinc-300 hover:text-white dark:hover:text-white transition-colors">
+            <a href="mailto:support@neetcode.io" className="text-zinc-300 hover:text-white transition-colors">
               support@neetcode.io
             </a>
           </p>

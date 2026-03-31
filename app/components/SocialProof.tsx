@@ -115,7 +115,7 @@ export default function SocialProof() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: 0.3 + i * 0.06 }}
-                className="font-sans text-base font-semibold text-white/25 hover:text-white/50 dark:hover:text-zinc-200 transition-colors cursor-default tracking-tight"
+                className="font-sans text-base font-semibold text-white/25 hover:text-white/50 transition-colors cursor-default tracking-tight"
               >
                 {co}
               </motion.span>
