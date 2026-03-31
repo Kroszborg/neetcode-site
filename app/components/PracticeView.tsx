@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-const topicIcons: Record<string, JSX.Element> = {
+const topicIcons: Record<string, React.ReactNode> = {
   'Arrays': (
     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
       <rect x="3" y="3" width="7" height="7" rx="1" />
